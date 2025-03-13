@@ -6,6 +6,10 @@ import hero_title from '../../assets/hero_title.png'
 import play_icon from '../../assets/play_icon.png'
 import info_icon from '../../assets/info_icon.png'
 import TitleCards from '../../components/TitleCards/TitleCards'
+import TitleCardsPopular from '../../components/TitleCards/TitleCardsPopular'
+import TitleCardsNowPlaying from '../../components/TitleCards/TitleCardsNowPlaying'
+import TitleCardsTopRated from '../../components/TitleCards/TitleCardsTopRated'
+import TitleCardsUpcoming from '../../components/TitleCards/TitleCardsUpcoming'
 
 const Home = () => {
   return (
@@ -24,10 +28,10 @@ const Home = () => {
         </div>
       </div>
       <div className="more_cards">
-        <TitleCards title={"Em Cartaz"}/>
-        <TitleCards title={"Populares"}/>
-        <TitleCards title={"Bem Avaliados"}/>
-        <TitleCards title={"Em Breve"}/>
+        <TitleCardsNowPlaying title={"Em Cartaz"}/>
+        <TitleCardsTopRated title={"Bem Avaliados"}/>
+        <TitleCardsPopular title={"Populares"}/>
+        <TitleCardsUpcoming title={"Em Breve"}/>
       </div>
     </div>
   )
