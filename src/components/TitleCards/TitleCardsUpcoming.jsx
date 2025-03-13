@@ -35,7 +35,7 @@ const TitleCardsUpcoming = ({title}) => {
         {apiData.map((card, index) => {
           return <div className="card" key={index}>
             <img src={`https://image.tmdb.org/t/p/w500`+card.backdrop_path} alt=''/>
-            <p>{card.original_title}</p>
+            <p>{card.title}</p>
           </div>
         })}
       </div>
