@@ -22,3 +22,8 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+.card_list .card p {
+    text-decoration: none;
+    color: white;
+}
