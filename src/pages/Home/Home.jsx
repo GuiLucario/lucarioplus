@@ -9,7 +9,7 @@ import TitleCards from '../../components/TitleCards/TitleCards'
 import TitleCardsPopular from '../../components/TitleCards/TitleCardsPopular'
 import TitleCardsNowPlaying from '../../components/TitleCards/TitleCardsNowPlaying'
 import TitleCardsTopRated from '../../components/TitleCards/TitleCardsTopRated'
-import TitleCardsUpcoming from '../../components/TitleCards/TitleCardsUpcoming'
+import TitleCardsTrending from '../../components/TitleCards/TitleCardsTrending'
 
 const Home = () => {
   return (
@@ -31,7 +31,7 @@ const Home = () => {
         <TitleCardsNowPlaying title={"Em Cartaz"}/>
         <TitleCardsTopRated title={"Bem Avaliados"}/>
         <TitleCardsPopular title={"Populares"}/>
-        <TitleCardsUpcoming title={"Em Breve"}/>
+        <TitleCardsTrending title={"Tendências"}/>
       </div>
     </div>
   )

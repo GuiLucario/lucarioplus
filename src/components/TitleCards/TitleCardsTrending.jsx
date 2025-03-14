@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import './TitleCards.css'
 import { Link } from 'react-router-dom';
 
-const TitleCardsUpcoming = ({title}) => {
+const TitleCardsTrending = ({title}) => {
   const [apiData, setApiData] = useState([]);
 
   const cardsRef = useRef();
@@ -22,7 +22,7 @@ const TitleCardsUpcoming = ({title}) => {
 
   useEffect(() => {
 
-    fetch('https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1', options)
+    fetch('https://api.themoviedb.org/3/trending/movie/day?language=en-US', options)
     .then(res => res.json())
     .then(res => setApiData(res.results))
     .catch(err => console.error(err));
@@ -44,4 +44,4 @@ const TitleCardsUpcoming = ({title}) => {
   )
 }
 
-export default TitleCardsUpcoming
+export default TitleCardsTrending
