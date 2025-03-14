@@ -10,6 +10,7 @@ import TitleCardsPopular from '../../components/TitleCards/TitleCardsPopular'
 import TitleCardsNowPlaying from '../../components/TitleCards/TitleCardsNowPlaying'
 import TitleCardsTopRated from '../../components/TitleCards/TitleCardsTopRated'
 import TitleCardsTrending from '../../components/TitleCards/TitleCardsTrending'
+import TitleCardsSimilar from '../../components/TitleCards/TitleCardsSimilar'
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
         </div>
       </div>
       <div className="more_cards">
+        <TitleCardsSimilar title={"Baseado no que você assiste"}/>
         <TitleCardsNowPlaying title={"Em Cartaz"}/>
         <TitleCardsTopRated title={"Bem Avaliados"}/>
         <TitleCardsPopular title={"Populares"}/>
