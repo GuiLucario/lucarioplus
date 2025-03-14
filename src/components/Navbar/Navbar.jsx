@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
 import profile_icon from '../../assets/profile_icon.png'
+import { logout } from '../../firebase'
 
 const Navbar = () => {
 
@@ -33,7 +34,7 @@ const Navbar = () => {
         <div className="navbar-profile">
           <img src={profile_icon} alt="" className='profile' />
           <div className='dropdown'>
-            <p>Sair</p>
+            <p onClick={()=>{logout()}}>Sair</p>
           </div>
         </div>
       </div>
